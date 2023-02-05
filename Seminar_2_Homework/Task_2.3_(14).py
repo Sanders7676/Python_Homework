@@ -14,3 +14,10 @@
 # Примеры/Тесты:
 # 10     -> 1,2,4,8,
 # 10000  -> 1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8192,
+
+
+n = int(input(f'Введите число N: '))
+current_power_of_two = 0
+while 2**current_power_of_two <= n:
+  print(2**current_power_of_two)
+  current_power_of_two += 1

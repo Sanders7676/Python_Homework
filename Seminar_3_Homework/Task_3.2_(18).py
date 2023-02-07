@@ -18,7 +18,7 @@ for el in available_list:
         
 
 list_2 = []
-q = 0
+# q = 0
 i = 0
 for el in available_list:
     if el != given_number_X:
@@ -27,9 +27,20 @@ for el in available_list:
         else:
             q = given_number_X - available_list[i]
         
-        list_2[i] = q
+        list_2.append(q)
         i += 1
 
 print(list_2)
 
 
+# min_element_in_list_2 = list_2[0]
+
+j = 0
+
+if available_list[]
+for j in list_2:
+    if list_2[j] < min_element_in_list_2:
+        min_element_in_list_2 = list_2[j]
+
+print(min_element_in_list_2)
+print(available_list[j])

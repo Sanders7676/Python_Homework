@@ -6,3 +6,23 @@
 # Input: [10, 5, 7, 3, 3, 2, 5, 7, 3, 8], X = 0
 # Output: 2
 # Input: [10, 5, 7, 3, 3, 2, 5, 7, 3, 8], X = 9
+
+
+available_list = [10, 5, 7, 3, 3, 2, 5, 7, 3, 8]
+given_number_X = int(input(f'Введите число X: '))
+
+for el in available_list:
+    if el == given_number_X:
+        print(given_number_X)
+        break
+        
+
+
+q = 0
+for el in available_list:
+    if el != given_number_X:
+        if available_list[el] > given_number_X:
+            q = available_list[el] - given_number_X
+        else:
+            q = given_number_X - available_list
+            

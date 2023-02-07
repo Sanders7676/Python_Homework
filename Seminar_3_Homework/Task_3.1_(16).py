@@ -15,8 +15,8 @@
 
 # (*) Усложнение. При выводе результата на экран воспользуйтесь тернарным оператором.
 
-given_number_X = int(input(f'Введите число X: '))
 available_list = [10, 5, 7, 3, 3, 0, 5, 7, 2, 8]
+given_number_X = int(input(f'Введите число X: '))
 
 repetitions_of_given_number = 0
 

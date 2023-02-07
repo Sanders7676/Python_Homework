@@ -33,14 +33,16 @@ for el in available_list:
 print(list_2)
 
 
-# min_element_in_list_2 = list_2[0]
+min_element_in_list_2 = list_2[0]
 
 j = 0
 
-if available_list[]
+# if available_list[]
+
 for j in list_2:
-    if list_2[j] < min_element_in_list_2:
+    if list_2[j] < min_element_in_list_2:     # Показывает, что здесь ошибка, когда Х = 0
         min_element_in_list_2 = list_2[j]
 
+print(available_list)
 print(min_element_in_list_2)
 print(available_list[j])

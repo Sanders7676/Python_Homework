@@ -14,3 +14,21 @@
 # Напишите алгоритм подсчета самостоятельно или воспользуйтесь методами списка.
 
 # (*) Усложнение. При выводе результата на экран воспользуйтесь тернарным оператором.
+
+given_number_X = int(input(f'Введите число X: '))
+available_list = [10, 5, 7, 3, 3, 0, 5, 7, 2, 8]
+
+repetitions_of_given_number = 0
+
+for el in available_list:
+    if el == given_number_X:
+        repetitions_of_given_number += 1
+
+if repetitions_of_given_number == 0:
+    print(-1)
+else:
+    print(repetitions_of_given_number)
+
+# Решение через тернарный оператор:
+
+print('-1' if repetitions_of_given_number == 0 else repetitions_of_given_number)

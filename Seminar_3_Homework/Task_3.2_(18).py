@@ -17,12 +17,19 @@ for el in available_list:
         break
         
 
-
+list_2 = []
 q = 0
+i = 0
 for el in available_list:
     if el != given_number_X:
-        if available_list[el] > given_number_X:
-            q = available_list[el] - given_number_X
+        if available_list[i] > given_number_X:
+            q = available_list[i] - given_number_X
         else:
-            q = given_number_X - available_list
-            
+            q = given_number_X - available_list[i]
+        
+        list_2[i] = q
+        i += 1
+
+print(list_2)
+
+

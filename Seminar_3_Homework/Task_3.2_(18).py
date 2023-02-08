@@ -8,6 +8,7 @@
 # Input: [10, 5, 7, 3, 3, 2, 5, 7, 3, 8], X = 9
 
 
+
 available_list = [10, 5, 7, 3, 3, 2, 5, 7, 3, 8]
 given_number_X = int(input(f'Введите число X: '))
 

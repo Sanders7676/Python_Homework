@@ -34,3 +34,35 @@
 # Подумайте о том какие структуры данных здесь наиболее удобно использовать, 
 # чтобы просто проверять в какую группу попадает буква, 
 # а также просто накапливать сумму очков.
+
+
+
+set_for_one_point = {'A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u', 'L', 'l', 'N', 'n', 'S', 's', 'T', 't', 'R', 'r', 'А', 'а', 'В', 'в', 'Е', 'е', 'И', 'и', 'Н', 'н', 'О', 'о', 'Р', 'р', 'С', 'с', 'Т', 'т'}
+set_for_two_points = {'D', 'd', 'G', 'g', 'Д', 'д', 'К', 'к', 'Л', 'л', 'М', 'м', 'П', 'п', 'У', 'у'}
+set_for_tree_points = {'B', 'b', 'C', 'c', 'M', 'm', 'P', 'p', 'Б', 'б', 'Г', 'г', 'Ё', 'ё', 'Ь', 'ь', 'Я', 'я'}
+set_for_four_points = {'F', 'f', 'H', 'f', 'V', 'v', 'W','w', 'Y', 'y', 'Й', 'й', 'Ы', 'ы'}
+set_for_five_points = {'K', 'k', 'Ж', 'ж', 'З', 'з', 'Х', 'х', 'Ц', 'ц', 'Ч', 'ч'}
+set_for_eight_points = {'J', 'j', 'X', 'x', 'Ш', 'ш', 'Э', 'э', 'Ю', 'ю'}
+set_for_ten_points = {'Q', 'q', 'Z', 'z', 'Ф', 'ф', 'Щ', 'щ', 'Ъ', 'ъ'}
+
+word = str(input(f'Ведите слово на русском или английском языках: '))
+
+point_box = 0
+
+for i in range(len(word)):
+    if word[i] in set_for_one_point:
+        point_box += 1
+    elif word[i] in set_for_two_points:
+        point_box += 2
+    elif word[i] in set_for_tree_points:
+        point_box += 3
+    elif word[i] in set_for_four_points:
+        point_box += 4
+    elif word[i] in set_for_five_points:
+        point_box += 5
+    elif word[i] in set_for_eight_points:
+        point_box += 8
+    elif word[i] in set_for_ten_points:
+        point_box += 10
+
+print(f'Вы заработали {point_box} очков!')

@@ -20,8 +20,8 @@ given_number_X = int(input(f'Введите число X: '))
 
 repetitions_of_given_number = 0
 
-for el in available_list:
-    if el == given_number_X:
+for element in available_list:
+    if element == given_number_X:
         repetitions_of_given_number += 1
 
 if repetitions_of_given_number == 0:

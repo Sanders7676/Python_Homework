@@ -32,10 +32,7 @@ for bush in range(len(arrangement_of_bushes)):
     else:
         fee_for_approach.append(arrangement_of_bushes[bush] + arrangement_of_bushes[bush - 1] + arrangement_of_bushes[bush + 1])
 
-# print(fee_for_approach)
-
 max_value_of_berry = max(fee_for_approach)
-
 max_is_on_bush = fee_for_approach.index(max_value_of_berry) + 1
 
 print(f'Макс. кол-во ягод {max_value_of_berry}, собрано для куста {max_is_on_bush}.')

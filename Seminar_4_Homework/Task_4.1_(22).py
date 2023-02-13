@@ -12,3 +12,39 @@
 # Input1: 2 4 6 8 10 10 8 6 4 2
 # Input2: 3 9 12 15 18
 # Output: Повторяющихся чисел нет
+
+
+
+# Решение через множества (неупорядоченный набор чисел)
+
+set_1 = {2, 4, 6, 8, 10, 12, 10, 8, 6, 4, 2}
+# set_1 = {2, 4, 6, 8, 10, 10, 8, 6, 4, 2}
+set_2 = {3, 6, 9, 12, 15, 18}
+# set_2 = {3, 9, 12, 15, 18}
+
+if set_2.intersection(set_1):
+    print(*sorted(set_2.intersection(set_1)))
+else:
+    print('Повторяющихся чисел нет')
+
+
+
+# Решение через списки:
+# (в связи с наличием повторяющихся элементов)
+
+list_1 = [2, 4, 6, 8, 10, 12, 10, 8, 6, 4, 2]
+# list_1 = [2, 4, 6, 8, 10, 10, 8, 6, 4, 2]
+list_2 = [3, 6, 9, 12, 15, 18]
+# list_2 = [3, 9, 12, 15, 18]
+
+repeating_elements = set()
+
+for element_from_list_1 in list_1:
+  for element_from_list_2 in list_2:
+    if element_from_list_1 == element_from_list_2:
+      repeating_elements.add(element_from_list_1)
+      
+if len(repeating_elements) == 0:
+  print('Повторяющихся чисел нет')
+else:
+  print(*sorted(repeating_elements))
